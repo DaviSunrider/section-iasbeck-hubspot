@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços HubSpot</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F4F7FD;
+            color: #2e475d;
+            line-height: 1.5;
+            box-sizing: border-box;
+        }
+        .titulo {
+            margin-bottom: 70px;
+        }
+        .span-titulo {
+            color: #4C7DF7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .card-area {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid rgba(13, 0, 71, 0.2);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: left;
+            position: relative;
+            overflow: visible;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            position: absolute;
+            border: 1px solid rgba(13, 0, 71, 0.2);
+            border-radius: 10px;
+            top: 0px;
+            left: -20px;
+            width: 90px;
+            height: 90px;
+            transform: translate(50%, -50%);
+            z-index: 1;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+        }
+        .card h4 {
+            font-size: 20px;
+            margin: 40px 0 10px;
+            z-index: 2;
+            position: relative;
+}
+
+        .card h4::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -5px; /* Posição da linha abaixo do texto */
+            left: 0; /* Início da linha no lado esquerdo */
+            transform: scaleX(0); /* A linha começa invisível */
+            width: 25%; /* Comprimento total da linha */
+            height: 4px; /* Espessura da linha */
+            background-color: #4C7DF7; /* Cor da linha */
+            transition: transform 0.3s ease-in-out; /* Animação suave */
+            transform-origin: left; /* Linha cresce a partir da esquerda */
+}
+
+        .card h4:hover::after {
+        transform: scaleX(1); 
+}
+
+        .card p {
+            font-size: 16px;
+            color: #1F2E51;
+            z-index: 2;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .card-area {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Nossos serviços especializados em <span class="span-titulo">Hubspot CRM</span>.</h1>
+        </div>
+        <div class="card-area">
+            <div class="card">
+                <img src="./icons/diagnostico.png" alt="Diagnóstico do CRM Hubspot">
+                <h4 style="color: #162139;">Diagnóstico do CRM Hubspot</h4>
+                <p>Realizamos o diagnóstico completo do seu HubSpot para identificar gargalos, oportunidades de melhoria e propor novos processos alinhados e adaptados às operações da sua empresa.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/estruturacao.png" alt="Estruturação de Processos para CRM Hubspot">
+                <h4 style="color: #162139;">Estruturação de Processos para CRM Hubspot</h4>
+                <p>Desenhamos e estruturamos processos personalizados às necessidades do seu negócio no Hubspot, simplificando a gestão de leads, vendas e de todo o relacionamento com os clientes.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/implemetacao.png" alt="Implementação Técnica do CRM Hubspot">
+                <h4 style="color: #162139;">Implementação Técnica do CRM Hubspot</h4>
+                <p>Oferecemos uma implementação completa do CRM Hubspot com a expertise técnica e metodologia exclusiva da Iasbeck&Co. Configuramos a ferramenta para atender as demandas da sua empresa, integrando o Hubspot de forma eficiente as suas operações.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/migracao.png" alt="Integrações">
+                <h4 style="color: #162139;">Migração de Dados para o CRM Hubspot</h4>
+                <p>Fazemos a migração de dados precisa de outros CRM para o Hubspot. Nessa jornada, organizamos dados e processos do seu negócio, preservando a integridade das informações.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/automacao.png" alt="Treinamentos">
+                <h4 style="color: #162139;">Automações e Integrações para o CRM Hubspot</h4>
+                <p>Desenvolvemos automações e integrações robustas, conectando o Hubspot a outras ferramentas, otimizando os fluxos de trabalho e os processos comerciais do seu negócio.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/relatorios.png" alt="RevOps">
+                <h4 style="color: #162139;">Desenvolvimento de Relatórios Personalizados para o CRM Hubspot</h4>
+                <p>Criamos relatórios personalizados e avançados no Hubspot, proporcionando o acompanhamento de métricas e o monitoramento em tempo real para uma tomada de decisões estratégica e assertiva.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/treinamento.png" alt="Estratégias Avançadas">
+                <h4 style="color: #162139;">Treinamento das equipes para utilização do CRM Hubspot</h4>
+                <p>Capacitamos profissionais e gestores em Hubspot com treinamentos práticos e personalizados, acelerando a curva de aprendizado da ferramenta e promovendo um maior aproveitamento dos recursos avançados da plataforma.</p>
+            </div>
+            <div class="card">
+                <img src="./icons/regua-nutricao.png" alt="Monitoramento Contínuo">
+                <h4 style="color: #162139;">Desenvolvimento de réguas de nutrição e conteúdos dentro do CRM Hubspot</h4>
+                <p>Desenvolvemos réguas de nutrição e conteúdos estratégicos no Hubspot, gerando engajamento e fortalecendo o relacionamento do seu negócio com clientes e leads.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
