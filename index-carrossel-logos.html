@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Logos</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Cor de fundo */
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; 
+        padding: 40px 20px; 
+    }
+
+    .swiper {
+        padding-bottom: 30px; 
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente as imagens */
+        justify-content: center; /* Centraliza horizontalmente as imagens */
+        height: 60px; /* Altura fixa para os slides */
+}
+
+    .swiper-slide img {
+        max-height: 60px; /* Altura máxima das imagens */
+        max-width: 180px; /* Largura máxima das imagens */
+        height: auto; /* Mantém a proporção das imagens */
+        width: auto; /* Garante que a largura se ajuste corretamente */
+        display: block; /* Remove espaço em branco ao redor das imagens */
+}
+
+
+    .swiper-pagination {
+        position: relative; /* Mantém a paginação abaixo do carrossel */
+        margin-top: 40px; /* Espaço entre os logos e a paginação */
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #86A9FF;
+        opacity: 0.7;
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #4C7DF7;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./logos-parceiros/AAA.png" alt="Logo 1"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Aliare.png" alt="Logo 2"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Ambev.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Arcelor.png" alt="Logo 4"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Banco-Arbi.png" alt="Logo 5"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Boticário.png" alt="Logo 6"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/BRDE.png" alt="Logo 7"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/yuca.png" alt="Logo 8"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/BTA.png" alt="Logo 9"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Copel.png" alt="Logo 10"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Eletrolux.png" alt="Logo 11"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/LeaDedu.png" alt="Logo 12"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Lidia.png" alt="Logo 13"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Logcomex.png" alt="Logo 14"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Piwi.png" alt="Logo 15"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Planik.png" alt="Logo 16"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Roche.png" alt="Logo 17"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Sim Fitness.png" alt="Logo 18"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Suzano.png" alt="Logo 19"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Totvs-1.png" alt="Logo 20"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Viveo.png" alt="Logo 20"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/Wap.png" alt="Logo 20"></div>
+            <div class="swiper-slide"><img src="./logos-parceiros/We Payments.png" alt="Logo 20"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true, // Faz o carrossel ser contínuo
+        autoplay: {
+            delay: 5000, // Tempo entre movimentos automáticos (5 segundos)
+            disableOnInteraction: false, // Continua após interação
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Permite clicar nos pontos da paginação
+        },
+        slidesPerView: 5, // Mostra 5 logos por página
+        spaceBetween: 23, // Espaço entre os logos
+    });
+</script>
+
+</body>
+</html>
